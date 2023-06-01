@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>家計簿アプリ</title>
+</head>
+<body>
+    <div class="content">
+        <p><b>日付：<span id="target_month"></span></b></p>
+        <p>
+          <a id="get_before_month" href="javascript:void(0);">＜＜前月</a>
+          <input type="text" id="product_name" placeholder="商品">
+          <input type="text" id="product_price" placeholder="価格">
+          <input type="button" id="add" value="追加">
+          <input type="button" id="clear" value="クリア">
+          <a id="get_next_month" href="javascript:void(0);">翌月＞＞</a>
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th width="25%">日付</th>
+              <th width="40%">商品</th>
+              <th width="25%">価格</th>
+              <th width="10%"></th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      <div>
+        <b><p class="sum_price">合計：0円</p></b>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
